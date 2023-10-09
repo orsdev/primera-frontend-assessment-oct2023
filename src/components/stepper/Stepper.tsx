@@ -1,5 +1,6 @@
 import { FC } from "react";
 import clsx from "clsx";
+import { numberToWords } from "@/utils";
 
 interface StepperProps {
   current: number;
@@ -72,7 +73,7 @@ const StepperItem: FC<StepperProps> = ({ items, current }) => {
                 })}
               >
                 <h4 className="text-[16px] font-normal text-mid uppercase font-saira">
-                  Step {index + 1}
+                  Step {numberToWords(index + 1)}
                 </h4>
                 <h3 className="font-bold text-[20px] relative -top-[10px] font-asap">
                   {item.title}

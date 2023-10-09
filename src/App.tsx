@@ -1,4 +1,4 @@
-import { Stepper } from "./components";
+import { Stepper } from "@/components";
 
 const items = [
   {
